@@ -150,6 +150,9 @@
     <File Include="bin/System.Web.WebPages.Razor.dll">
       <publishTime>01/28/2015 04:04:30</publishTime>
     </File>
+    <File Include="bin/VL.Blog.dll">
+      <publishTime>02/02/2018 15:50:39</publishTime>
+    </File>
     <File Include="bin/WebApplication1.dll">
       <publishTime>02/02/2018 15:34:54</publishTime>
     </File>
@@ -238,7 +241,7 @@
       <publishTime>02/02/2018 15:24:35</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>02/02/2018 15:24:32</publishTime>
+      <publishTime>02/02/2018 15:49:10</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>02/02/2018 15:24:53</publishTime>
@@ -286,37 +289,37 @@
       <publishTime>02/02/2018 15:24:41</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginFailure.cshtml">
       <publishTime>02/02/2018 15:24:41</publishTime>
     </File>
     <File Include="Views/Account/ForgotPassword.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Account/ForgotPasswordConfirmation.cshtml">
       <publishTime>02/02/2018 15:24:41</publishTime>
     </File>
     <File Include="Views/Account/Login.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Account/Register.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Account/ResetPassword.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Account/ResetPasswordConfirmation.cshtml">
       <publishTime>02/02/2018 15:24:41</publishTime>
     </File>
     <File Include="Views/Account/SendCode.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Account/VerifyCode.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:10</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>02/02/2018 15:24:32</publishTime>
@@ -328,22 +331,22 @@
       <publishTime>02/02/2018 15:24:32</publishTime>
     </File>
     <File Include="Views/Manage/AddPhoneNumber.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Manage/ChangePassword.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Manage/Index.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Manage/ManageLogins.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Manage/SetPassword.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Manage/VerifyPhoneNumber.cshtml">
-      <publishTime>02/02/2018 15:24:41</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>02/02/2018 15:24:41</publishTime>
@@ -358,13 +361,13 @@
       <publishTime>02/02/2018 15:24:41</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>02/02/2018 15:24:32</publishTime>
+      <publishTime>02/02/2018 15:49:11</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
       <publishTime>02/02/2018 15:24:32</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>02/02/2018 15:38:00</publishTime>
+      <publishTime>02/02/2018 15:50:39</publishTime>
     </File>
   </ItemGroup>
 </Project>
