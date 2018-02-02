@@ -1,7 +1,4 @@
-﻿using System;
-using System.Globalization;
-using System.Linq;
-using System.Security.Claims;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -44,11 +41,23 @@ namespace VL.Blog.Controllers
         {
             get
             {
-                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+                if (_userManager==null)
+                {
+                    UserManager = HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+                }
+                return _userManager;
             }
             private set
             {
                 _userManager = value;
+                _userManager.PasswordValidator = new PasswordValidator
+                {
+                    RequiredLength = 6,
+                    RequireNonLetterOrDigit = false, //必须有非字母非数字字符
+                    RequireDigit = true,
+                    RequireLowercase = false,
+                    RequireUppercase = false,
+                };
             }
         }
 
@@ -151,7 +160,7 @@ namespace VL.Blog.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Account };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -248,7 +257,7 @@ namespace VL.Blog.Controllers
             {
                 return View(model);
             }
-            var user = await UserManager.FindByNameAsync(model.Email);
+            var user = await UserManager.FindByNameAsync(model.Account);
             if (user == null)
             {
                 // 请不要显示该用户不存在

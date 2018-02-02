@@ -64,10 +64,15 @@ namespace VL.Blog.Models
 
     public class RegisterViewModel
     {
+        //[Required]
+        //[EmailAddress]
+        //[Display(Name = "电子邮件")]
+        //public string Email { get; set; }
+
         [Required]
-        [EmailAddress]
-        [Display(Name = "电子邮件")]
-        public string Email { get; set; }
+        [Display(Name = "用户名")]
+        public string Account { get; set; }
+
 
         [Required]
         [StringLength(100, ErrorMessage = "{0} 必须至少包含 {2} 个字符。", MinimumLength = 6)]
@@ -83,10 +88,14 @@ namespace VL.Blog.Models
 
     public class ResetPasswordViewModel
     {
+        //[Required]
+        //[EmailAddress]
+        //[Display(Name = "电子邮件")]
+        //public string Email { get; set; }
+
         [Required]
-        [EmailAddress]
-        [Display(Name = "电子邮件")]
-        public string Email { get; set; }
+        [Display(Name = "用户名")]
+        public string Account { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "{0} 必须至少包含 {2} 个字符。", MinimumLength = 6)]
