@@ -49,17 +49,15 @@ namespace VL.Blog
                 AllowOnlyAlphanumericUserNames = false,
                 RequireUniqueEmail = true
             };
-
             // 配置密码的验证逻辑
             manager.PasswordValidator = new PasswordValidator
             {
                 RequiredLength = 6,
-                RequireNonLetterOrDigit = true,
-                RequireDigit = true,
-                RequireLowercase = true,
-                RequireUppercase = true,
+                RequireNonLetterOrDigit = false, //必须有非字母非数字字符
+                RequireDigit = true,//是否需要数字
+                RequireLowercase = false,//是否需要小写字母
+                RequireUppercase = false,//是否需要大写字母
             };
-
             // 配置用户锁定默认值
             manager.UserLockoutEnabledByDefault = true;
             manager.DefaultAccountLockoutTimeSpan = TimeSpan.FromMinutes(5);

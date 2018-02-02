@@ -73,7 +73,6 @@ namespace VL.Blog.Models
         [Display(Name = "用户名")]
         public string Account { get; set; }
 
-
         [Required]
         [StringLength(100, ErrorMessage = "{0} 必须至少包含 {2} 个字符。", MinimumLength = 6)]
         [DataType(DataType.Password)]

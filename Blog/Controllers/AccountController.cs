@@ -50,14 +50,6 @@ namespace VL.Blog.Controllers
             private set
             {
                 _userManager = value;
-                _userManager.PasswordValidator = new PasswordValidator
-                {
-                    RequiredLength = 6,
-                    RequireNonLetterOrDigit = false, //必须有非字母非数字字符
-                    RequireDigit = true,
-                    RequireLowercase = false,
-                    RequireUppercase = false,
-                };
             }
         }
 
